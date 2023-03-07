@@ -25,17 +25,18 @@ export default (props: Props) => {
           <div class="text-slate">
             <div class="flex items-center gap-1 op-60 text-slate">
               <IconEnv />
-              <span>System Role:</span>
+              <span>系统角色:</span>
             </div>
-            <div class="mt-1">
-              { props.currentSystemRoleSettings() }
-            </div>
+            <div class="mt-1">{props.currentSystemRoleSettings()}</div>
           </div>
         </Show>
         <Show when={!props.currentSystemRoleSettings() && props.canEdit()}>
-          <span onClick={() => props.setSystemRoleEditing(!props.systemRoleEditing())} class="inline-flex items-center justify-center gap-1 text-sm text-slate bg-slate/20 px-2 py-1 rounded-md transition-colors cursor-pointer hover:bg-slate/50">
+          <span
+            onClick={() => props.setSystemRoleEditing(!props.systemRoleEditing())}
+            class="inline-flex items-center justify-center gap-1 text-sm text-slate bg-slate/20 px-2 py-1 rounded-md transition-colors cursor-pointer hover:bg-slate/50"
+          >
             <IconEnv />
-            <span>Add System Role</span>
+            <span>添加系统角色</span>
           </span>
         </Show>
       </Show>
@@ -43,18 +44,22 @@ export default (props: Props) => {
         <div>
           <div class="flex items-center gap-1 op-60 text-slate">
             <IconEnv />
-            <span>System Role:</span>
+            <span>系统角色:</span>
           </div>
-          <p class="my-2 leading-normal text-slate text-sm op-60">Gently instruct the assistant and set the behavior of the assistant.</p>
+          <p class="my-2 leading-normal text-slate text-sm op-60">
+            Gently instruct the assistant and set the behavior of the assistant.
+          </p>
           <div>
             <textarea
               ref={systemInputRef!}
-              placeholder="You are a helpful assistant, answer as concisely as possible...."
+              placeholder="你是一个乐于助人的助手，尽量简明扼要地回答..."
               autocomplete="off"
               autofocus
               rows="3"
               w-full
-              px-3 py-3 my-1
+              px-3
+              py-3
+              my-1
               min-h-12
               max-h-36
               text-slate
@@ -67,7 +72,8 @@ export default (props: Props) => {
               placeholder:text-slate-400
               placeholder:op-30
               overflow-hidden
-              resize-none scroll-pa-8px
+              resize-none
+              scroll-pa-8px
             />
           </div>
           <button onClick={handleButtonClick} h-12 px-4 py-2 bg-slate bg-op-15 hover:bg-op-20 text-slate rounded-sm>
