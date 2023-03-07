@@ -35,7 +35,7 @@ export default ({ role, message, showRetry, onRetry }: Props) => {
         <div
           style={`${
             role === 'assistant'
-              ? 'background-image:url(https://www.qingyi1220.cn/img/ChatGPT.png);background-position: center;'
+              ? 'background-image:url(https://www.qingyi1220.cn/img/ChatGPT.png);background-position: center;background-size: cover'
               : ''
           }`}
           class={`shrink-0 w-7 h-7 mt-4 rounded-full op-80 ${roleClass[role]}`}
