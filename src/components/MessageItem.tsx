@@ -34,7 +34,7 @@ export default ({ role, message, showRetry, onRetry }: Props) => {
       <div class="flex gap-3 rounded-lg" class:op-80={role === 'user'}>
         <div
           style={`${
-            roleClass[role] === 'assistant'
+            role === 'assistant'
               ? 'background-image:url(https://chat.openai.com/favicon-32x32.png);background-position: center;'
               : ''
           }`}
