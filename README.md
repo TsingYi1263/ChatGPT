@@ -6,7 +6,7 @@
 
 1. 配置环境和安装项目依赖
 
-   > 首先，您需要安装[Node.js。](https://nodejs.org/)
+   > 首先，您需要安装[Node.js。](https://nodejs.org/) （需要 node 版本 18+）
 
    ```shell
    npm i
