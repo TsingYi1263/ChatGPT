@@ -1,41 +1,43 @@
 ---
-
 export interface Props {
-	title: string;
+  title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		{ import.meta.env.HEAD_SCRIPTS ? <Fragment set:html={import.meta.env.HEAD_SCRIPTS} /> : null }
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    {import.meta.env.HEAD_SCRIPTS ? <Fragment set:html={import.meta.env.HEAD_SCRIPTS} /> : null}
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		background-image: linear-gradient(90deg,#90CEF4 10%,#EF8DF4 99.7%,cyan)
-	}
-	p{
-		color: #5890eb !important
-	}
-	.placeholder\:text-slate-400::placeholder, .text-slate, [placeholder\:text-slate-400=""]::placeholder, [text-slate=""] {
-        color: #90379d
-}
-	main {
-		max-width: 70ch;
-		margin: 0 auto;
-		padding: 6rem 2rem 4rem;
-		height: 100vh;
-	}
+  html {
+    font-family: system-ui, sans-serif;
+    background-image: linear-gradient(90deg, #90cef4 10%, #ef8df4 99.7%, cyan);
+  }
+  .placeholder\:text-slate-400::placeholder,
+  .text-slate,
+  [placeholder\:text-slate-400='']::placeholder,
+  [text-slate=''] {
+    color: #5890eb;
+  }
+  .from-sky-400 {
+    --un-gradient-stops: rgb(0 177 255), rgb(243 0 255) !important;
+  }
+  main {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: 6rem 2rem 4rem;
+    height: 100vh;
+  }
 </style>
