@@ -22,10 +22,10 @@
    npm run dev
    ```
 
-## Deploy With Vercel
+## Deploy With Vercel（推荐）
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/TsingYi1263/ChatGPT&env=OPENAI_API_KEY&envDescription=OpenAI%20API%20Key&envLink=https://platform.openai.com/account/api-keys)
 
 用 Vercel 部署，Fork 到自己的仓库，填写自己的 OpenAI API Key 后部署即可。
 
-> 准备事项：梯子、vercel 和 GitHub 账号、vercel 绑定 GitHub、ChatGPT Key
+> 准备事项：梯子(获取ChatGPT Key)、OpenAI 、vercel 、 GitHub账号、vercel 绑定 GitHub
