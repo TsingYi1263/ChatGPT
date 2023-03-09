@@ -187,7 +187,7 @@ export default () => {
           </div>
         )}
       >
-        <div class="my-4 flex items-center gap-2" class:op-50={systemRoleEditing()}>
+        <div class="my-4 flex items-center gap-2" class:op-75={systemRoleEditing()}>
           <textarea
             ref={inputRef!}
             disabled={systemRoleEditing()}
@@ -214,7 +214,7 @@ export default () => {
             focus:ring-0
             focus:outline-none
             placeholder:text-slate-400
-            placeholder:op-50
+            placeholder:op-75
             scroll-pa-8px
           />
           <button

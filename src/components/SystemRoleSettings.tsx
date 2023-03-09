@@ -70,7 +70,7 @@ export default (props: Props) => {
               focus:ring-0
               focus:outline-none
               placeholder:text-slate-400
-              placeholder:op-30
+              placeholder:op-75
               overflow-hidden
               resize-none
               scroll-pa-8px
