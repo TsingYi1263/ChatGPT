@@ -23,7 +23,7 @@ export default (props: Props) => {
       <Show when={!props.systemRoleEditing()}>
         <Show when={props.currentSystemRoleSettings()}>
           <div class="text-slate">
-            <div class="flex items-center gap-1 op-60 text-slate">
+            <div class="flex items-center gap-1 text-slate">
               <IconEnv />
               <span>系统角色:</span>
             </div>
@@ -42,11 +42,11 @@ export default (props: Props) => {
       </Show>
       <Show when={props.systemRoleEditing() && props.canEdit()}>
         <div>
-          <div class="flex items-center gap-1 op-60 text-slate">
+          <div class="flex items-center gap-1  text-slate">
             <IconEnv />
             <span>系统角色:</span>
           </div>
-          <p class="my-2 leading-normal text-slate text-sm op-60">
+          <p class="my-2 leading-normal text-slate text-sm">
             Gently instruct the assistant and set the behavior of the assistant.
           </p>
           <div>
