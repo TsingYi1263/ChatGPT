@@ -214,7 +214,7 @@ export default () => {
             focus:ring-0
             focus:outline-none
             placeholder:text-slate-400
-            placeholder:op-30
+            placeholder:op-50
             scroll-pa-8px
           />
           <button
