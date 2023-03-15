@@ -193,7 +193,6 @@ export default () => {
             disabled={systemRoleEditing()}
             onKeyDown={handleKeydown}
             placeholder="Enter something..."
-            readonly
             autocomplete="off"
             autofocus
             onInput={() => {
