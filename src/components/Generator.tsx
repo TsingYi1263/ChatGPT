@@ -126,6 +126,15 @@ export default () => {
     setCurrentSystemRoleSettings('')
   }
 
+  const changeBackground = () => {
+    let bg = document.documentElement
+    if (bg.style.backgroundImage !== 'none') {
+      bg.style.backgroundImage = 'none'
+    } else {
+      bg.style.backgroundImage = 'linear-gradient(#0b1111 100%,cyan)'
+    }
+  }
+
   const stopStreamFetch = () => {
     if (controller()) {
       controller().abort()
@@ -246,6 +255,20 @@ export default () => {
             rounded-sm
           >
             <IconClear />
+          </button>
+          <button
+            onClick={changeBackground}
+            title="更换背景"
+            h-12
+            px-4
+            py-2
+            bg-slate
+            bg-op-15
+            hover:bg-op-20
+            text-slate
+            rounded-sm
+          >
+            主题
           </button>
         </div>
       </Show>
