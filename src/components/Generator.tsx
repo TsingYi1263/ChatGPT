@@ -128,10 +128,10 @@ export default () => {
 
   const changeBackground = () => {
     let bg = document.documentElement
-    if (bg.style.backgroundImage !== 'none') {
-      bg.style.backgroundImage = 'none'
+    if (bg.style.backgroundImage == 'linear-gradient(rgb(11, 17, 17) 100%, black)') {
+      bg.style.backgroundImage = 'linear-gradient(90deg,#90cef4 10%,#ef8df4 99.7%,cyan)'
     } else {
-      bg.style.backgroundImage = 'linear-gradient(#0b1111 100%,cyan)'
+      bg.style.backgroundImage = 'linear-gradient(rgb(11, 17, 17) 100%, black)'
     }
   }
 
@@ -268,7 +268,7 @@ export default () => {
             text-slate
             rounded-sm
           >
-            主题
+            theme
           </button>
         </div>
       </Show>
